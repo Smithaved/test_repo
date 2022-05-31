@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Pro 582 created]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="25751" started-at="2022-05-27T04:41:57Z" finished-at="2022-05-27T04:42:23Z">
+    <groups>
+      <group name="regression">
+        <method signature="CreateProductlTest.createProductlTest()[pri:0, instance:com.vtiger.productsTest.CreateProductlTest@433ffad1]" name="createProductlTest" class="com.vtiger.productsTest.CreateProductlTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="CreateProductlTest.createProductlTest()[pri:0, instance:com.vtiger.productsTest.CreateProductlTest@433ffad1]" name="createProductlTest" class="com.vtiger.productsTest.CreateProductlTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Test" duration-ms="25751" started-at="2022-05-27T04:41:57Z" finished-at="2022-05-27T04:42:23Z">
+      <class name="com.vtiger.productsTest.CreateProductlTest">
+        <test-method status="PASS" signature="beforesuitTest()[pri:0, instance:com.vtiger.productsTest.CreateProductlTest@433ffad1]" name="beforesuitTest" is-config="true" duration-ms="2542" started-at="2022-05-27T04:41:55Z" finished-at="2022-05-27T04:41:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuitTest -->
+        <test-method status="PASS" signature="beforeclassTest(java.lang.String)[pri:0, instance:com.vtiger.productsTest.CreateProductlTest@433ffad1]" name="beforeclassTest" is-config="true" duration-ms="6582" started-at="2022-05-27T04:41:57Z" finished-at="2022-05-27T04:42:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclassTest -->
+        <test-method status="PASS" signature="beforemethodTest()[pri:0, instance:com.vtiger.productsTest.CreateProductlTest@433ffad1]" name="beforemethodTest" is-config="true" duration-ms="3664" started-at="2022-05-27T04:42:04Z" finished-at="2022-05-27T04:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethodTest -->
+        <test-method status="PASS" signature="createProductlTest()[pri:0, instance:com.vtiger.productsTest.CreateProductlTest@433ffad1]" name="createProductlTest" duration-ms="11811" started-at="2022-05-27T04:42:09Z" finished-at="2022-05-27T04:42:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Pro 582 created]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createProductlTest -->
+        <test-method status="PASS" signature="aftermethodTest()[pri:0, instance:com.vtiger.productsTest.CreateProductlTest@433ffad1]" name="aftermethodTest" is-config="true" duration-ms="2013" started-at="2022-05-27T04:42:20Z" finished-at="2022-05-27T04:42:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethodTest -->
+        <test-method status="PASS" signature="afterclassTest()[pri:0, instance:com.vtiger.productsTest.CreateProductlTest@433ffad1]" name="afterclassTest" is-config="true" duration-ms="733" started-at="2022-05-27T04:42:22Z" finished-at="2022-05-27T04:42:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclassTest -->
+        <test-method status="PASS" signature="aftersuiteTest()[pri:0, instance:com.vtiger.productsTest.CreateProductlTest@433ffad1]" name="aftersuiteTest" is-config="true" duration-ms="1" started-at="2022-05-27T04:42:23Z" finished-at="2022-05-27T04:42:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuiteTest -->
+      </class> <!-- com.vtiger.productsTest.CreateProductlTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

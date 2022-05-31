@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="createContactWithImportContactTc5Test"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+        </methods>
+      </class> <!-- com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test -->
+      <class name="com.vtiger.contactTest.CreateContactTest">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="createContactTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+        </methods>
+      </class> <!-- com.vtiger.contactTest.CreateContactTest -->
+      <class name="com.vtiger.practice.TestNgAssertTest">
+        <methods>
+          <include name="practiceTest5"/>
+          <include name="practiceTest2"/>
+          <include name="practiceTest1"/>
+        </methods>
+      </class> <!-- com.vtiger.practice.TestNgAssertTest -->
+      <class name="com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+          <include name="createContactWithoutLastNameTc1Test"/>
+        </methods>
+      </class> <!-- com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test -->
+      <class name="com.vtiger.contactTest.CreateContactAWOrganizationTest">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="createContactAWOrganizationTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+        </methods>
+      </class> <!-- com.vtiger.contactTest.CreateContactAWOrganizationTest -->
+      <class name="com.vtiger.practice.TestngPractice1Test">
+        <methods>
+          <include name="afterSuite1Test"/>
+          <include name="class1Test"/>
+          <include name="afterMethod1Test"/>
+          <include name="afterTest1Test"/>
+          <include name="practice"/>
+          <include name="beforeMethod1Test"/>
+          <include name="beforeTest1Test"/>
+          <include name="suite1Test2"/>
+          <include name="suite1Test"/>
+          <include name="afterClass1Test"/>
+        </methods>
+      </class> <!-- com.vtiger.practice.TestngPractice1Test -->
+      <class name="com.vitiger.contacts.tcases.DeleteCreateTc14Test">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+          <include name="deleteCreateTc14Test"/>
+        </methods>
+      </class> <!-- com.vitiger.contacts.tcases.DeleteCreateTc14Test -->
+      <class name="com.vtiger.documentsTest.CreateDocumentTest">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="createDocumentTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+        </methods>
+      </class> <!-- com.vtiger.documentsTest.CreateDocumentTest -->
+      <class name="com.vtiger.practice.CreateDocumentTest">
+        <methods>
+          <include name="afterclassTest"/>
+          <include name="beforeclassTest"/>
+          <include name="createDocumentTest"/>
+          <include name="beforesuitTest"/>
+          <include name="beforemethodTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+        </methods>
+      </class> <!-- com.vtiger.practice.CreateDocumentTest -->
+      <class name="com.vitiger.contacts.tcases.CreateContactAWOrganizationTest">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="createContactAWOrganizationTest"/>
+          <include name="beforemethodTest"/>
+        </methods>
+      </class> <!-- com.vitiger.contacts.tcases.CreateContactAWOrganizationTest -->
+      <class name="com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+          <include name="viewContactsDropdownTc16Test"/>
+        </methods>
+      </class> <!-- com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test -->
+      <class name="com.vtiger.productsTest.CreateProductlTest">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+          <include name="createProductlTest"/>
+        </methods>
+      </class> <!-- com.vtiger.productsTest.CreateProductlTest -->
+      <class name="com.vtiger.practice.DependencyParameterTest">
+        <methods>
+          <include name="practiceTest1"/>
+          <include name="practiceTest2"/>
+        </methods>
+      </class> <!-- com.vtiger.practice.DependencyParameterTest -->
+      <class name="com.vtiger.organizationTest.CreateOrganizationTest">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="createOrganizationTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+        </methods>
+      </class> <!-- com.vtiger.organizationTest.CreateOrganizationTest -->
+      <class name="com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="createOrganizationWithIndustryAndTypeTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+        </methods>
+      </class> <!-- com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest -->
+      <class name="com.vtiger.campaignsTest.CreateCampaignTest">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="createCampaignTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+        </methods>
+      </class> <!-- com.vtiger.campaignsTest.CreateCampaignTest -->
+      <class name="com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest">
+        <methods>
+          <include name="beforeclassTest"/>
+          <include name="createCampaignsAWProductNameTest"/>
+          <include name="aftermethodTest"/>
+          <include name="aftersuiteTest"/>
+          <include name="beforesuitTest"/>
+          <include name="afterclassTest"/>
+          <include name="beforemethodTest"/>
+        </methods>
+      </class> <!-- com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

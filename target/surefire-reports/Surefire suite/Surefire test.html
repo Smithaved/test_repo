@@ -1,0 +1,1954 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/5/15</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 26 16:48:09 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1420 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.vtiger.productsTest.CreateProductlTest.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vtiger.productsTest.CreateProductlTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1406114969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1406114969'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.productsTest.CreateProductlTest@52b56a3e</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactAWOrganizationTest.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactAWOrganizationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1025463690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1025463690'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactAWOrganizationTest@1d1f7216</td></tr>
+<tr>
+<td title='com.vtiger.practice.CreateDocumentTest.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vtiger.practice.CreateDocumentTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1463877470", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1463877470'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.practice.CreateDocumentTest@423e4cbb</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace613017674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace613017674'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test@43b4fe19</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1779378259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1779378259'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test@25ddbbbb</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.DeleteCreateTc14Test.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vitiger.contacts.tcases.DeleteCreateTc14Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1565397985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1565397985'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.DeleteCreateTc14Test@1536602f</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1184166964", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1184166964'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test@4ebea12c</td></tr>
+<tr>
+<td title='com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1625097607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1625097607'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest@2a1edad4</td></tr>
+<tr>
+<td title='com.vtiger.campaignsTest.CreateCampaignTest.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vtiger.campaignsTest.CreateCampaignTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2004687135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2004687135'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.campaignsTest.CreateCampaignTest@6256ac4f</td></tr>
+<tr>
+<td title='com.vtiger.contactTest.CreateContactAWOrganizationTest.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vtiger.contactTest.CreateContactAWOrganizationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1600330912", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1600330912'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.contactTest.CreateContactAWOrganizationTest@44c79f32</td></tr>
+<tr>
+<td title='com.vtiger.contactTest.CreateContactTest.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vtiger.contactTest.CreateContactTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace634440506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace634440506'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.contactTest.CreateContactTest@7fcbe147</td></tr>
+<tr>
+<td title='com.vtiger.documentsTest.CreateDocumentTest.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vtiger.documentsTest.CreateDocumentTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793483510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793483510'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.documentsTest.CreateDocumentTest@235f4c10</td></tr>
+<tr>
+<td title='com.vtiger.organizationTest.CreateOrganizationTest.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vtiger.organizationTest.CreateOrganizationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace593323420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace593323420'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.organizationTest.CreateOrganizationTest@743cb8e0</td></tr>
+<tr>
+<td title='com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest.beforeclassTest()'><b>beforeclassTest</b><br>Test class: com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace906927110", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace906927110'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest@c7a975a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.vtiger.productsTest.CreateProductlTest.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vtiger.productsTest.CreateProductlTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.productsTest.CreateProductlTest@52b56a3e</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactAWOrganizationTest.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactAWOrganizationTest</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactAWOrganizationTest@1d1f7216</td></tr>
+<tr>
+<td title='com.vtiger.practice.CreateDocumentTest.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vtiger.practice.CreateDocumentTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.CreateDocumentTest@423e4cbb</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test@43b4fe19</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test@25ddbbbb</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.DeleteCreateTc14Test.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vitiger.contacts.tcases.DeleteCreateTc14Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.DeleteCreateTc14Test@1536602f</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test@4ebea12c</td></tr>
+<tr>
+<td title='com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest@2a1edad4</td></tr>
+<tr>
+<td title='com.vtiger.campaignsTest.CreateCampaignTest.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vtiger.campaignsTest.CreateCampaignTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.campaignsTest.CreateCampaignTest@6256ac4f</td></tr>
+<tr>
+<td title='com.vtiger.contactTest.CreateContactAWOrganizationTest.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vtiger.contactTest.CreateContactAWOrganizationTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.contactTest.CreateContactAWOrganizationTest@44c79f32</td></tr>
+<tr>
+<td title='com.vtiger.contactTest.CreateContactTest.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vtiger.contactTest.CreateContactTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.contactTest.CreateContactTest@7fcbe147</td></tr>
+<tr>
+<td title='com.vtiger.documentsTest.CreateDocumentTest.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vtiger.documentsTest.CreateDocumentTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.documentsTest.CreateDocumentTest@235f4c10</td></tr>
+<tr>
+<td title='com.vtiger.organizationTest.CreateOrganizationTest.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vtiger.organizationTest.CreateOrganizationTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.organizationTest.CreateOrganizationTest@743cb8e0</td></tr>
+<tr>
+<td title='com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest.beforemethodTest()'><b>beforemethodTest</b><br>Test class: com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest@c7a975a</td></tr>
+<tr>
+<td title='com.vtiger.productsTest.CreateProductlTest.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vtiger.productsTest.CreateProductlTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.productsTest.CreateProductlTest@52b56a3e</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactAWOrganizationTest.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactAWOrganizationTest</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactAWOrganizationTest@1d1f7216</td></tr>
+<tr>
+<td title='com.vtiger.practice.CreateDocumentTest.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vtiger.practice.CreateDocumentTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.CreateDocumentTest@423e4cbb</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test@43b4fe19</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test@25ddbbbb</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.DeleteCreateTc14Test.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vitiger.contacts.tcases.DeleteCreateTc14Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.DeleteCreateTc14Test@1536602f</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test@4ebea12c</td></tr>
+<tr>
+<td title='com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest@2a1edad4</td></tr>
+<tr>
+<td title='com.vtiger.campaignsTest.CreateCampaignTest.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vtiger.campaignsTest.CreateCampaignTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.campaignsTest.CreateCampaignTest@6256ac4f</td></tr>
+<tr>
+<td title='com.vtiger.contactTest.CreateContactAWOrganizationTest.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vtiger.contactTest.CreateContactAWOrganizationTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.contactTest.CreateContactAWOrganizationTest@44c79f32</td></tr>
+<tr>
+<td title='com.vtiger.contactTest.CreateContactTest.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vtiger.contactTest.CreateContactTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.contactTest.CreateContactTest@7fcbe147</td></tr>
+<tr>
+<td title='com.vtiger.documentsTest.CreateDocumentTest.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vtiger.documentsTest.CreateDocumentTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.documentsTest.CreateDocumentTest@235f4c10</td></tr>
+<tr>
+<td title='com.vtiger.organizationTest.CreateOrganizationTest.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vtiger.organizationTest.CreateOrganizationTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.organizationTest.CreateOrganizationTest@743cb8e0</td></tr>
+<tr>
+<td title='com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest.aftermethodTest()'><b>aftermethodTest</b><br>Test class: com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest@c7a975a</td></tr>
+<tr>
+<td title='com.vtiger.productsTest.CreateProductlTest.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vtiger.productsTest.CreateProductlTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.productsTest.CreateProductlTest@52b56a3e</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactAWOrganizationTest.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactAWOrganizationTest</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactAWOrganizationTest@1d1f7216</td></tr>
+<tr>
+<td title='com.vtiger.practice.CreateDocumentTest.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vtiger.practice.CreateDocumentTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.CreateDocumentTest@423e4cbb</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test@43b4fe19</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test@25ddbbbb</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.DeleteCreateTc14Test.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vitiger.contacts.tcases.DeleteCreateTc14Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.DeleteCreateTc14Test@1536602f</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test</td>
+<td></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test@4ebea12c</td></tr>
+<tr>
+<td title='com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest@2a1edad4</td></tr>
+<tr>
+<td title='com.vtiger.campaignsTest.CreateCampaignTest.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vtiger.campaignsTest.CreateCampaignTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.campaignsTest.CreateCampaignTest@6256ac4f</td></tr>
+<tr>
+<td title='com.vtiger.contactTest.CreateContactAWOrganizationTest.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vtiger.contactTest.CreateContactAWOrganizationTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.contactTest.CreateContactAWOrganizationTest@44c79f32</td></tr>
+<tr>
+<td title='com.vtiger.contactTest.CreateContactTest.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vtiger.contactTest.CreateContactTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.contactTest.CreateContactTest@7fcbe147</td></tr>
+<tr>
+<td title='com.vtiger.documentsTest.CreateDocumentTest.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vtiger.documentsTest.CreateDocumentTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.documentsTest.CreateDocumentTest@235f4c10</td></tr>
+<tr>
+<td title='com.vtiger.organizationTest.CreateOrganizationTest.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vtiger.organizationTest.CreateOrganizationTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.organizationTest.CreateOrganizationTest@743cb8e0</td></tr>
+<tr>
+<td title='com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest.afterclassTest()'><b>afterclassTest</b><br>Test class: com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest@c7a975a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.vtiger.practice.TestngPractice1Test.practice()'><b>practice</b><br>Test class: com.vtiger.practice.TestngPractice1Test<br/>
+<a href="#Output-1985828309" onClick='toggleBox("Output-1985828309", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1985828309" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1985828309">
+Hi<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.vtiger.practice.TestngPractice1Test.practice(TestngPractice1Test.java:13)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1985828309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1985828309'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.fail(Assert.java:103)
+	at com.vtiger.practice.TestngPractice1Test.practice(TestngPractice1Test.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.practice.TestngPractice1Test@4c168660</td></tr>
+<tr>
+<td title='com.vtiger.practice.TestNgAssertTest.practiceTest1()'><b>practiceTest1</b><br>Test class: com.vtiger.practice.TestNgAssertTest<br/>
+<a href="#Output-337460547" onClick='toggleBox("Output-337460547", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-337460547" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-337460547">
+a-practice1<br/>
+b-practice1<br/>
+c-practice1<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: practice1 fail
+	at com.vtiger.practice.TestNgAssertTest.practiceTest1(TestNgAssertTest.java:16)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace337460547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace337460547'><pre>java.lang.AssertionError: practice1 fail
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.vtiger.practice.TestNgAssertTest.practiceTest1(TestNgAssertTest.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.practice.TestNgAssertTest@3c0fae6c</td></tr>
+<tr>
+<td title='com.vtiger.practice.TestNgAssertTest.practiceTest2()'><b>practiceTest2</b><br>Test class: com.vtiger.practice.TestNgAssertTest<br/>
+<a href="#Output-64068997" onClick='toggleBox("Output-64068997", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-64068997" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-64068997">
+a-practice2<br/>
+b-practice2<br/>
+c-practice2<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [abd] but found [abc]
+	at com.vtiger.practice.TestNgAssertTest.practiceTest2(TestNgAssertTest.java:28)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace64068997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace64068997'><pre>java.lang.AssertionError: expected [abd] but found [abc]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.vtiger.practice.TestNgAssertTest.practiceTest2(TestNgAssertTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.practice.TestNgAssertTest@3c0fae6c</td></tr>
+<tr>
+<td title='com.vtiger.practice.DependencyParameterTest.practiceTest2()'><b>practiceTest2</b><br>Test class: com.vtiger.practice.DependencyParameterTest<br/>
+<a href="#Output-1534765208" onClick='toggleBox("Output-1534765208", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1534765208" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1534765208">
+Hello<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.vtiger.practice.DependencyParameterTest.practiceTest2(DependencyParameterTest.java:16)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1534765208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1534765208'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.fail(Assert.java:103)
+	at com.vtiger.practice.DependencyParameterTest.practiceTest2(DependencyParameterTest.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.practice.DependencyParameterTest@2c1b9e4b</td></tr>
+<tr>
+<td title='com.vtiger.practice.TestNgAssertTest.practiceTest5()'><b>practiceTest5</b><br>Test class: com.vtiger.practice.TestNgAssertTest<br/>
+<a href="#Output-1476484694" onClick='toggleBox("Output-1476484694", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1476484694" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1476484694">
+a-practice4<br/>
+b-practice4<br/>
+c-practice4<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.vtiger.practice.TestNgAssertTest.practiceTest5(TestNgAssertTest.java:71)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1476484694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1476484694'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.fail(Assert.java:103)
+	at com.vtiger.practice.TestNgAssertTest.practiceTest5(TestNgAssertTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.practice.TestNgAssertTest@3c0fae6c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.vtiger.practice.TestngPractice1Test.practice1()'><b>practice1</b><br>Test class: com.vtiger.practice.TestngPractice1Test</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.TestngPractice1Test@4c168660</td></tr>
+<tr>
+<td title='com.vtiger.practice.TestngPractice1Test.practice2()'><b>practice2</b><br>Test class: com.vtiger.practice.TestngPractice1Test</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.TestngPractice1Test@4c168660</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username1, password1<br/>
+<a href="#Output-1089691218" onClick='toggleBox("Output-1089691218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1089691218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1089691218">
+username1         password1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username2, password2<br/>
+<a href="#Output-518290846" onClick='toggleBox("Output-518290846", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-518290846" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-518290846">
+username2         password2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username3, password3<br/>
+<a href="#Output-1687293378" onClick='toggleBox("Output-1687293378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1687293378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1687293378">
+username3         password3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username4, password4<br/>
+<a href="#Output-333180318" onClick='toggleBox("Output-333180318", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-333180318" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-333180318">
+username4         password4<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username5, password5<br/>
+<a href="#Output-491825098" onClick='toggleBox("Output-491825098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-491825098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-491825098">
+username5         password5<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username6, password6<br/>
+<a href="#Output-1465146431" onClick='toggleBox("Output-1465146431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1465146431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1465146431">
+username6         password6<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username7, password7<br/>
+<a href="#Output-1092109169" onClick='toggleBox("Output-1092109169", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1092109169" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1092109169">
+username7         password7<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username8, password8<br/>
+<a href="#Output-368270275" onClick='toggleBox("Output-368270275", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-368270275" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-368270275">
+username8         password8<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username9, password9<br/>
+<a href="#Output-2085713965" onClick='toggleBox("Output-2085713965", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2085713965" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2085713965">
+username9         password9<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username10, password10<br/>
+<a href="#Output-547853628" onClick='toggleBox("Output-547853628", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-547853628" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-547853628">
+username10         password10<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.DataProviderAnnotationTest.practiceTest()'><b>practiceTest</b><br>Test class: com.vtiger.practice.DataProviderAnnotationTest<br>Parameters: username11, password11<br/>
+<a href="#Output-1340421119" onClick='toggleBox("Output-1340421119", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1340421119" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1340421119">
+username11         password11<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DataProviderAnnotationTest@6e16b8b5</td></tr>
+<tr>
+<td title='com.vtiger.practice.InvocationParameterTest.practiceTest1()'><b>practiceTest1</b><br>Test class: com.vtiger.practice.InvocationParameterTest<br/>
+<a href="#Output-1263461649" onClick='toggleBox("Output-1263461649", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1263461649" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1263461649">
+HI<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.InvocationParameterTest@757d6814</td></tr>
+<tr>
+<td title='com.vtiger.practice.InvocationParameterTest.practiceTest1()'><b>practiceTest1</b><br>Test class: com.vtiger.practice.InvocationParameterTest<br/>
+<a href="#Output-94354228" onClick='toggleBox("Output-94354228", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-94354228" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-94354228">
+HI<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.InvocationParameterTest@757d6814</td></tr>
+<tr>
+<td title='com.vtiger.practice.PriorityParameterTest.practiceTest1()'><b>practiceTest1</b><br>Test class: com.vtiger.practice.PriorityParameterTest<br/>
+<a href="#Output-379972461" onClick='toggleBox("Output-379972461", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-379972461" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-379972461">
+HI<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.PriorityParameterTest@649725e3</td></tr>
+<tr>
+<td title='com.vtiger.practice.InvocationParameterTest.practiceTest2()'><b>practiceTest2</b><br>Test class: com.vtiger.practice.InvocationParameterTest<br/>
+<a href="#Output-459875531" onClick='toggleBox("Output-459875531", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-459875531" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-459875531">
+Hello<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.InvocationParameterTest@757d6814</td></tr>
+<tr>
+<td title='com.vtiger.practice.PriorityParameterTest.practiceTest2()'><b>practiceTest2</b><br>Test class: com.vtiger.practice.PriorityParameterTest<br/>
+<a href="#Output-982337150" onClick='toggleBox("Output-982337150", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-982337150" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-982337150">
+Hello<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.PriorityParameterTest@649725e3</td></tr>
+<tr>
+<td title='com.vtiger.practice.TestNgAssertTest.practiceTest3()'><b>practiceTest3</b><br>Test class: com.vtiger.practice.TestNgAssertTest<br/>
+<a href="#Output-1136612247" onClick='toggleBox("Output-1136612247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1136612247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1136612247">
+a-practice3<br/>
+b-practice3<br/>
+c-practice3<br/>
+d-practice3<br/>
+e-practice3<br/>
+f-practice3<br/>
+g-practice3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.TestNgAssertTest@3c0fae6c</td></tr>
+<tr>
+<td title='com.vtiger.practice.DependencyParameterTest.practiceTest3()'><b>practiceTest3</b><br>Test class: com.vtiger.practice.DependencyParameterTest<br/>
+<a href="#Output-2080864181" onClick='toggleBox("Output-2080864181", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2080864181" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2080864181">
+Hello word<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.DependencyParameterTest@2c1b9e4b</td></tr>
+<tr>
+<td title='com.vtiger.practice.PriorityParameterTest.practiceTest3()'><b>practiceTest3</b><br>Test class: com.vtiger.practice.PriorityParameterTest<br/>
+<a href="#Output-1591398176" onClick='toggleBox("Output-1591398176", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1591398176" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1591398176">
+Hello word<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.PriorityParameterTest@649725e3</td></tr>
+<tr>
+<td title='com.vtiger.practice.TestNgAssertTest.practiceTest4()'><b>practiceTest4</b><br>Test class: com.vtiger.practice.TestNgAssertTest<br/>
+<a href="#Output-1465800495" onClick='toggleBox("Output-1465800495", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1465800495" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1465800495">
+a-practice4<br/>
+b-practice4<br/>
+c-practice4<br/>
+d-practice4<br/>
+e-practice4<br/>
+f-practice4<br/>
+g-practice4<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.practice.TestNgAssertTest@3c0fae6c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.vtiger.campaignsTest.CreateCampaignTest.createCampaignTest()'><b>createCampaignTest</b><br>Test class: com.vtiger.campaignsTest.CreateCampaignTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace238612663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace238612663'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.campaignsTest.CreateCampaignTest@6256ac4f</td></tr>
+<tr>
+<td title='com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest.createCampaignsAWProductNameTest()'><b>createCampaignsAWProductNameTest</b><br>Test class: com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace864511710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace864511710'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.campaignsTest.CreateCampaignsAWProductNameTest@2a1edad4</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactAWOrganizationTest.createContactAWOrganizationTest()'><b>createContactAWOrganizationTest</b><br>Test class: com.vitiger.contacts.tcases.CreateContactAWOrganizationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1131140319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1131140319'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactAWOrganizationTest@1d1f7216</td></tr>
+<tr>
+<td title='com.vtiger.contactTest.CreateContactAWOrganizationTest.createContactAWOrganizationTest()'><b>createContactAWOrganizationTest</b><br>Test class: com.vtiger.contactTest.CreateContactAWOrganizationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace825496893", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace825496893'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.contactTest.CreateContactAWOrganizationTest@44c79f32</td></tr>
+<tr>
+<td title='com.vtiger.contactTest.CreateContactTest.createContactTest()'><b>createContactTest</b><br>Test class: com.vtiger.contactTest.CreateContactTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1177903557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1177903557'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.contactTest.CreateContactTest@7fcbe147</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test.createContactWithImportContactTc5Test()'><b>createContactWithImportContactTc5Test</b><br>Test class: com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace625232315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace625232315'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactWithImportContactTc5Test@43b4fe19</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test.createContactWithoutLastNameTc1Test()'><b>createContactWithoutLastNameTc1Test</b><br>Test class: com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1841421417", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1841421417'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.CreateContactWithoutLastNameTc1Test@25ddbbbb</td></tr>
+<tr>
+<td title='com.vtiger.practice.CreateDocumentTest.createDocumentTest()'><b>createDocumentTest</b><br>Test class: com.vtiger.practice.CreateDocumentTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace722173530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace722173530'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.practice.CreateDocumentTest@423e4cbb</td></tr>
+<tr>
+<td title='com.vtiger.documentsTest.CreateDocumentTest.createDocumentTest()'><b>createDocumentTest</b><br>Test class: com.vtiger.documentsTest.CreateDocumentTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace724128993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace724128993'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.documentsTest.CreateDocumentTest@235f4c10</td></tr>
+<tr>
+<td title='com.vtiger.organizationTest.CreateOrganizationTest.createOrganizationTest()'><b>createOrganizationTest</b><br>Test class: com.vtiger.organizationTest.CreateOrganizationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace257745083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace257745083'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.organizationTest.CreateOrganizationTest@743cb8e0</td></tr>
+<tr>
+<td title='com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest.createOrganizationWithIndustryAndTypeTest()'><b>createOrganizationWithIndustryAndTypeTest</b><br>Test class: com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1937209374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1937209374'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.organizationTest.CreateOrganizationWithIndustryAndTypeTest@c7a975a</td></tr>
+<tr>
+<td title='com.vtiger.productsTest.CreateProductlTest.createProductlTest()'><b>createProductlTest</b><br>Test class: com.vtiger.productsTest.CreateProductlTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace955743449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace955743449'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vtiger.productsTest.CreateProductlTest@52b56a3e</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.DeleteCreateTc14Test.deleteCreateTc14Test()'><b>deleteCreateTc14Test</b><br>Test class: com.vitiger.contacts.tcases.DeleteCreateTc14Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace645323781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace645323781'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.DeleteCreateTc14Test@1536602f</td></tr>
+<tr>
+<td title='com.vtiger.practice.DependencyParameterTest.practiceTest1()'><b>practiceTest1</b><br>Test class: com.vtiger.practice.DependencyParameterTest</td>
+<td><div><pre>java.lang.Throwable: Method DependencyParameterTest.practiceTest1()[pri:0, instance:com.vtiger.practice.DependencyParameterTest@2c1b9e4b] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace91430202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace91430202'><pre>java.lang.Throwable: Method DependencyParameterTest.practiceTest1()[pri:0, instance:com.vtiger.practice.DependencyParameterTest@2c1b9e4b] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test.viewContactsDropdownTc16Test()'><b>viewContactsDropdownTc16Test</b><br>Test class: com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1514778448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1514778448'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeclassTest but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>0</td>
+<td>com.vitiger.contacts.tcases.ViewContactsDropdownTc16Test@4ebea12c</td></tr>
+</table><p>
+</body>
+</html>
