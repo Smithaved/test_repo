@@ -41,15 +41,16 @@ public class BaseClass{
 	/**
 	 * This method is used to launch the browser
 	 */
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeClass(groups = "baseclass")
-	public void beforeclassTest(String browser)
+	public void beforeclassTest()
 	{
 		String url=FilesLibrary.fetchDataFromPropertyFile("url");
 		//String browser=FilesLibrary.fetchDataFromPropertyFile("browser");
 		username=FilesLibrary.fetchDataFromPropertyFile("username");
 		password=FilesLibrary.fetchDataFromPropertyFile("password");
 	    longtimeout=JavaLibrary.stringToLong(FilesLibrary.fetchDataFromPropertyFile("timeout"));
+	    String browser=System.getProperty("Browser");
 		switch (browser) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
