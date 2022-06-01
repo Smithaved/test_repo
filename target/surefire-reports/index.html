@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\Workspaces\Workspace1\SDET34L1\testng_Product.xml</span>
+                    <span>D:\Workspaces\Workspace1\SDET34L1---copy\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.productsTest.CreateProductlTest" hash-for-method="createProductlTest">createProductlTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.documentsTest.CreateDocumentTest" hash-for-method="createDocumentTest">createDocumentTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.vtiger.productsTest.CreateProductlTest</span>
+              <span class="class-name">com.vtiger.documentsTest.CreateDocumentTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createProductlTest">
-                  </a> <!-- createProductlTest -->
-                  <span class="method-name">createProductlTest</span>
+                  <a name="createDocumentTest">
+                  </a> <!-- createDocumentTest -->
+                  <span class="method-name">createDocumentTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,17 +135,19 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Workspaces\Workspace1\SDET34L1\testng_Product.xml</span>
+            <span class="header-content">D:\Workspaces\Workspace1\SDET34L1---copy\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.SDET34L1.genericUtility.ListenerImplimentation&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.vtiger.productsTest.CreateProductlTest&quot;/&gt;
+      &lt;class name=&quot;com.vtiger.documentsTest.CreateDocumentTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -173,7 +175,7 @@
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">createProductlTest</span>
+                <span class="method-in-group-name">createDocumentTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -181,7 +183,7 @@
               <span class="test-group-name">sanity</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">createProductlTest</span>
+                <span class="method-in-group-name">createDocumentTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -203,14 +205,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createProductlTest')
-data.setCell(0, 2, 'com.vtiger.productsTest.CreateProductlTest')
-data.setCell(0, 3, 11811);
+data.setCell(0, 1, 'createDocumentTest')
+data.setCell(0, 2, 'com.vtiger.documentsTest.CreateDocumentTest')
+data.setCell(0, 3, 41584);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -222,9 +224,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">createProductlTest</span>
+              <span class="reporter-method-name">createDocumentTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Pro 582 created</span>
+                <span class="reporter-method-output">Doc_256 added</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,34 +244,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.vtiger.productsTest.CreateProductlTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.vtiger.documentsTest.CreateDocumentTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforesuitTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">beforeclassTest(chrome)</span>
-                <span class="method-start">2590 ms</span>
+                <span class="method-name">beforeclassTest</span>
+                <span class="method-start">3409 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethodTest</span>
-                <span class="method-start">9191 ms</span>
+                <span class="method-start">18807 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">createProductlTest</span>
-                <span class="method-start">13712 ms</span>
+                <span class="method-name">createDocumentTest</span>
+                <span class="method-start">38756 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethodTest</span>
-                <span class="method-start">25545 ms</span>
+                <span class="method-start">80370 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterclassTest</span>
-                <span class="method-start">27560 ms</span>
+                <span class="method-start">83666 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">aftersuiteTest</span>
-                <span class="method-start">28338 ms</span>
+                <span class="method-start">85689 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
